@@ -222,7 +222,7 @@ You were so sweet and fun to talk to that day, baby. I felt so comfortable with 
 
 You were so easy to talk to baby. One thing that really got me to fall for you was how you really wanted to make time for me. Like I was aware of how busy you were ato, and when you get home kay I know tired ka. But despite all that—bisag tired nakayka—di  gihapon ka mo rest, hantod sa makatulgan ko nimo. Didto ko na touch baby, bisag tired kayka po you still spent time with me. Didto nako na feel na murag ako imo pahinga hehe. 
 
-Despite all that, nahadlok gihapon ko ato baby. Since you know bag-o rako naka hawa sa ako past relationship ato, and I was scared na ma hurt balik—so I left. I regretted that so much, but I’m forever grateful na gihatagan ko nimo ug second chance baby. I really loved you, and I was overwhelmed with my feelings. I was scared of commitment, but you made me risk everything. We weren’t official pa ato, and you tried to make it official buttt I wanted it to be special and wanted to bawi.  Soooo, here’s how we made it official. No regrets since then, YOU’RE THE BEST THING THAT’S HAPPENED TO ME.
+Despite all that, nahadlok gihapon ko ato baby. Since you know bag-o rako naka hawa sa ako past relationship ato, and I was scared na ma hurt balik—so I left. I regretted that so much, but I’m forever grateful na gihatagan ko nimo ug second chance baby. I really loved you, and I was overwhelmed with my feelings. I was scared of commitment, but you made me risk everything. We weren’t official pa ato, and you tried to make it official buttt I wanted it to be special and wanted to bawi. No regrets since then, YOU’RE THE BEST THING THAT’S HAPPENED TO ME.
 
 I love you so much, my baby. I’m forever grateful I met you.`;
     } 
@@ -336,5 +336,6 @@ homeMsg.innerHTML = `I made this for you because I know that life isn’t always
             This is my way of reaching out to you whenever you need me the most. Each page is a reminder that you are deeply loved, cared for, and never alone—even during the toughest days. I want you to have something to open whenever you need encouragement, or comfort.
             <br><br>
             More than anything, I hope this reminds you that I will always choose you, stand by you, and love you in every version of tomorrow. This is my heart in words, saved here for you, because you mean everything to me and I love you.`;
+
 
 
