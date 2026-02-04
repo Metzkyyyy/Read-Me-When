@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For You</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Parisienne&family=Segoe+UI:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="nav-container">
+        <button class="nav-btn active" onclick="switchView('home')">Home</button>
+        <button class="nav-btn" onclick="switchView('chapters')">Chapters</button>
+    </div>
+
+    <div class="content-wrapper">
+        
+        <div id="home-view" class="view-section active-view">
+            <div class="home-card">
+                <h1>I love you, my Ally</h1>
+                <div class="home-message">
+                    </div>
+            </div>
+        </div>
+
+        <div id="chapters-view" class="view-section">
+            <div class="gallery-container" id="gallery-container">
+                <div class="carousel" id="carousel">
+                    </div>
+            </div>
+
+            <div class="bottom-label" id="chapter-controls">
+                For You, Always.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="letter-overlay" id="letter-overlay">
+        <div class="parchment-card-container">
+            <div class="ribbon"></div>
+            <div class="parchment-card">
+                <div class="card-border-deco"></div>
+                <div class="close-letter" onclick="closeLetter()">&times;</div>
+                <div class="letter-content-scroll">
+                    <div class="card-monogram">My Dearest</div>
+                    <div class="letter-title-cursive" id="letter-title">Topic Title</div>
+                    <div class="letter-body-cursive" id="letter-body"></div>
+                     <br><br>
+                     <div style="font-family: 'Parisienne', cursive; font-size: 1.5rem;">Love, Your Keya</div>
+                </div>
+                <div class="wax-seal">K.M</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
