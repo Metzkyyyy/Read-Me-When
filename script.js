@@ -211,7 +211,7 @@ function getLetterContent(topic) {
 
 This isn’t just words po haa—it’s a little piece of my heart I’ve decided to put together for you. I know things can get hard between us sometimes, and I might not always be there for you for some reasons, but I wanted to create something that can stay with you no matter what. So, please keep this and save it baby ha. This isn’t just words baby, this is a promise that I’ll always find ways to reach you, comfort you, and make you feel loved and cared for even from afar. 
 
-As you go through this, I hope you can feel me in every word. You’re never alone baby, you’ve always got me. I’ll always do my best to brighten your days, whether they’re heavy, tiring, or even the happiest ones. Think of this as a little treasure chest you can open anything you need me. No matter what happens, I want this to remind you of one thing baby: my love for you is real, endless, and unchanging, omkie? 
+As you go through this, I hope you can feel me in every word. You’re never alone baby, you’ve always got me. I’ll always do my best to brighten your days, whether they’re heavy, tiring, or even the happiest ones. Think of this as a little treasure chest you can open anytime you need me. No matter what happens, I want this to remind you of one thing baby: my love for you is real, endless, and unchanging, omkie? 
 
 I really really love you, and I hope you will always remember that. Nothing and no one can ever change that. It’s you, and it will always be you.`;
     } 
@@ -336,4 +336,5 @@ homeMsg.innerHTML = `I made this for you because I know that life isn’t always
             This is my way of reaching out to you whenever you need me the most. Each page is a reminder that you are deeply loved, cared for, and never alone—even during the toughest days. I want you to have something to open whenever you need encouragement, or comfort.
             <br><br>
             More than anything, I hope this reminds you that I will always choose you, stand by you, and love you in every version of tomorrow. This is my heart in words, saved here for you, because you mean everything to me and I love you.`;
+
 
