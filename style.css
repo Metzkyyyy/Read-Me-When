@@ -18,17 +18,18 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-image: url('https://i.pinimg.com/736x/67/e7/2b/67e72bd4081888aef9ae16ac7a4a5940.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; 
     height: 100vh;
+    min-height: -webkit-fill-available; 
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--primary-text);
-    -webkit-user-select: none;
     user-select: none;
+    -webkit-user-select: none;
 }
 
 .nav-container {
@@ -402,39 +403,43 @@ body {
 
 @media (max-width: 768px) {
     :root { 
-        /* Made cards smaller to fit mobile screens better */
-        --card-width: 260px; 
-        --card-height: 450px; 
+        --card-width: 220px; 
+        --card-height: 360px; 
     }
 
-    /* Home Card Adjustments */
+    body {
+        background-attachment: scroll; 
+        background-position: center center;
+    }
+
     .home-card {
-        width: 90%;
-        padding: 25px 20px; /* Reduced padding */
-        max-height: 75vh;
+        width: 85%;
+        padding: 20px;
+        max-height: 65vh; 
+        margin-top: -20px; 
     }
-    .home-card h1 { font-size: 1.8rem; margin-bottom: 15px; }
-    .home-message { font-size: 0.95rem; line-height: 1.6; }
+    .home-card h1 { font-size: 1.6rem; margin-bottom: 10px; }
+    .home-message { font-size: 0.85rem; line-height: 1.5; }
 
-    /* Carousel Card Adjustments */
-    .gallery-container { height: 65vh; }
-    .card-content { padding: 15px; } /* Less padding inside cards */
-    .main-title { font-size: 1.5rem; margin: 5px 0; }
-    .quote { font-size: 0.95rem; margin-bottom: 15px; }
-    .list-items li { font-size: 0.85rem; padding: 6px 10px; } /* Smaller list text */
-
-    /* Letter/Parchment Adjustments */
-    .parchment-card-container { width: 95%; max-height: 80vh; }
-    .parchment-card { 
-        padding: 35px 20px; /* More room for text, less wasted space */
+    .gallery-container { 
+        height: 55vh; 
+        margin-top: -40px; 
     }
-    .letter-content-scroll { max-height: 60vh; }
-    .card-monogram { font-size: 2rem; margin-bottom: 10px; }
-    .letter-title-cursive { font-size: 1.4rem; margin-bottom: 15px; }
-    .letter-body-cursive { font-size: 1.1rem; line-height: 1.5; } /* Readable but compact */
 
-    /* Decoration Adjustments */
-    .wax-seal { width: 45px; height: 45px; font-size: 1rem; bottom: 15px; right: 15px; }
-    .ribbon { width: 80px; height: 15px; bottom: 25px; }
-    .close-letter { top: 10px; right: 15px; font-size: 1.5rem; }
+    .card-content { padding: 12px; }
+    .card-image { height: 120px; } 
+    .main-title { font-size: 1.3rem; margin: 5px 0; }
+    .quote { font-size: 0.9rem; margin-bottom: 10px; }
+    .list-items li { font-size: 0.8rem; padding: 5px 8px; margin-bottom: 8px; }
+
+    .bottom-label {
+        bottom: 80px; 
+        font-size: 1.1rem;
+        padding: 8px 20px;
+        background: rgba(255, 255, 255, 0.3); 
+    }
+
+    .parchment-card-container { width: 90%; max-height: 75vh; }
+    .parchment-card { padding: 25px 15px; }
+    .letter-content-scroll { max-height: 55vh; }
 }
