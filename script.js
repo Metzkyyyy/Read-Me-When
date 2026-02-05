@@ -209,9 +209,9 @@ function getLetterContent(topic) {
     if (topic === "When you first receive this") {
         return `Henloww my precious baby! This is proof na mas love tika, hehehe. I made this for you because I wanted you to always have my words, even during times when I can’t be there for you right away. Always come back to this if you need it, omkie?  I hope this reminds you of how you are so loved and cared for by your one and only girlfriend, and future wifey. No matter what you’re feeling, I hope you find comfort in every page you open. This is my way of telling you that you’ll never have to walk through life alone, because you’ll always have me baby. I’ll always be your kakampi. 
 
-This isn’t just words po haa—it’s a little piece of my heart I’ve decided to put together for you. I know things can get hard between us sometimes, and I might not always be there for you for some reasons, but I wanted to create something that can stay with you no matter what. So, please keep this and save it baby ha. This isn’t just words baby, this is a promise that I’ll always find ways to reach you, comfort you, and make you feel loved and cared for even from afar. 
+This isn’t just a presentation po haa—it’s a little piece of my heart I’ve decided to put together for you. I know things can get hard between us sometimes, and I might not always be there for you for some reasons, but I wanted to create something that can stay with you no matter what. So, please keep this and save it baby ha. This isn’t just words baby, this is a promise that I’ll always find ways to reach you, comfort you, and make you feel loved and cared for even from afar. 
 
-As you go through this, I hope you can feel me in every word. You’re never alone baby, you’ve always got me. I’ll always do my best to brighten your days, whether they’re heavy, tiring, or even the happiest ones. Think of this as a little treasure chest you can open anytime you need me. No matter what happens, I want this to remind you of one thing baby: my love for you is real, endless, and unchanging, omkie? 
+As you go through this, I hope you can feel me in every word. You’re never alone baby, you’ve always got me. I’ll always do my best to brighten your days, whether they’re heavy, tiring, or even the happiest ones. Think of this as a little treasure chest you can open anything you need me. No matter what happens, I want this to remind you of one thing baby: my love for you is real, endless, and unchanging, omkie? 
 
 I really really love you, and I hope you will always remember that. Nothing and no one can ever change that. It’s you, and it will always be you.`;
     } 
@@ -222,7 +222,7 @@ You were so sweet and fun to talk to that day, baby. I felt so comfortable with 
 
 You were so easy to talk to baby. One thing that really got me to fall for you was how you really wanted to make time for me. Like I was aware of how busy you were ato, and when you get home kay I know tired ka. But despite all that—bisag tired nakayka—di  gihapon ka mo rest, hantod sa makatulgan ko nimo. Didto ko na touch baby, bisag tired kayka po you still spent time with me. Didto nako na feel na murag ako imo pahinga hehe. 
 
-Despite all that, nahadlok gihapon ko ato baby. Since you know bag-o rako naka hawa sa ako past relationship ato, and I was scared na ma hurt balik—so I left. I regretted that so much, but I’m forever grateful na gihatagan ko nimo ug second chance baby. I really loved you, and I was overwhelmed with my feelings. I was scared of commitment, but you made me risk everything. We weren’t official pa ato, and you tried to make it official buttt I wanted it to be special and wanted to bawi. No regrets since then, YOU’RE THE BEST THING THAT’S HAPPENED TO ME.
+Despite all that, nahadlok gihapon ko ato baby. Since you know bag-o rako naka hawa sa ako past relationship ato, and I was scared na ma hurt balik—so I left. I regretted that so much, but I’m forever grateful na gihatagan ko nimo ug second chance baby. I really loved you, and I was overwhelmed with my feelings. I was scared of commitment, but you made me risk everything. We weren’t official pa ato, and you tried to make it official buttt I wanted it to be special and wanted to bawi.  Soooo, here’s how we made it official. No regrets since then, YOU’RE THE BEST THING THAT’S HAPPENED TO ME.
 
 I love you so much, my baby. I’m forever grateful I met you.`;
     } 
@@ -299,6 +299,80 @@ You know ba? I think about you while I’m busy. I smile when I see your name on
 
 You are someone I don’t just love baby—I value you. You’ve become a part of my world that I can’t imagine being without. So even on days when I’m cold, when I take too long to reply, or when I seem distant—please don’t doubt me. I care, baby. I always have, and I always will. I love you so much.`;
     }
+    else if (topic === "When you’re worried I might leave you") {
+        return `I’m not going anywhere, baby. I know sometimes it feels like I’m slipping away, like my messages sounds off, but that doesn’t mean I’m giving up on us or losing interest in you. I haven’t changed my mind, I haven’t stopped caring baby. I’m human lang baby, I get tired, I overthink, I shut down sometimes. But even then, I still think of you. You’re not easy to forget, and I don’t ever want to. I’m still here choosing you every day even when things get hard or when we don’t understand each other.
+
+There will be days when we both feel unsure, when we question if we’re still enough for each other. That’s normal, omkie baby? Every bond goes through moments like that, especially when distance, life, or pressure gets in the way. You don’t have to doubt my place in your life because I want to be here. I know your mind can get loud sometimes, and I know fear can make you feel like love disappears easily. But mine doesn’t baby. I don’t love you only on good days or easy moments. I love you even when things feel messy, even when we’re tired, even when we don’t have the right words. If I ever go quiet, it’s not because I’m leaving baby—it’s because I’m still here, trying to breathe, trying to do things right, trying to stay instead of run.
+
+You don’t have to be perfect to keep me baby. You don’t have to hide your fears or be strong all the time. I see you as you are, and I still want you. When your thoughts tell you that you’re too much or that I’ll wake up one day and be gone, I need you to remember this: I stay because I want to, not because I have to. Loving you is not a burden. Being here with you is not something I regret, okay? 
+
+If you’re reading this while your chest feels tight, please know I’m still choosing us. I’m still choosing you baby. Even if we argue, even if we don’t understand each other right away, even if things feel unsure for a moment—my care for you doesn’t disappear. I don’t leave at the first sign of fear hm. I don’t walk away just because things get hard. I stay, I learn, I try, for us.
+
+You are not about to be abandoned, baby. You are not alone in this. I’m here baby, even when it doesn’t feel loud, even when it doesn’t feel perfect. I’m here because I love you, and because loving you is a choice I keep making—again and again.`;
+    }
+    else if (topic === "When you wonder why I’ll never stop choosing you") {
+        return `I choose you because loving you feels honest, baby. It doesn’t feel forced or rushed or temporary. It feels like something I want to protect, something I want to grow with. I don’t choose you because you’re perfect hm? I choose you because you’re real, because you show up as yourself, and because my heart feels safe when it thinks of my baby.
+
+I choose you on days when you’re happy and laughing, and I choose you on days when you’re quiet and hurting. I choose you when things feel easy, and I choose you when things feel confusing. My choice isn’t based on moods or moments baby. It’s based on care. It’s based on wanting to stay, even when staying takes effort.
+
+I choose you because you matter to me. Your thoughts matter. Your fears matter. Your softness matters. Even the parts of you that think they are too much or not enough—those parts don’t scare me away. They make me want to understand you more, to hold you more gently, to be patient when your heart feels tired.
+
+I choose you because love, to me, isn’t about leaving when things get heavy. It’s about showing up, listening, and trying again. It’s about learning how to love you better instead of giving up. Even when I don’t have all the right words, my choice stays the same.
+
+So why do I never stop choosing you? Because my heart keeps pointing back to you. Because choosing you feels right. Because loving you isn’t something I plan to stop doing, never my baby.`;
+    }
+    else if (topic === "When you forget your worth") {
+        return `Is my baby doubting herself again? :( Baby, pause for a moment and remember this: your worth has never depended on how much you do, how strong you are, or how little space you take. You are worthy simply because you exist baby.
+
+You are worthy on days when you feel confident, and you are just as worthy on days when you feel lost. Your value does not disappear when you make mistakes or when you struggle to keep going. You don’t lose your worth because you’re hurting. You don’t lose it because you need reassurance. You don’t lose it because you feel afraid.
+
+You matter more than you realize baby. The way you care, the way you feel deeply, the way you try even when you’re tired—those things are not small. They are proof of your heart. Even the parts of you that feel broken or unsure deserve love, and patience. Especially from yourself.
+
+When your mind tells you that you’re not enough, I want you to remember this: you are not hard to love baby. You are not a burden hm? You are not replaceable, never. You bring meaning just by being you, my baby. The world is better because you are in it, even on the days you can’t see it.
+
+So be gentle with my baby right now, please? You don’t have to earn your place. You don’t have to prove anything. You are already enough. You have always been enough baby. And nothing—not your fears, not your mistakes, not your worst days—can take that away from you.`;
+    }
+    else if (topic === "When you want to know my favorite things about you") {
+        return `My favorite things about you aren’t the loud or obvious ones, well some. They’re the small moments you probably don’t even notice, and probably do. I love the way you care without being asked, the way your heart shows even when you try to hide it. I love how you feel things deeply baby, even when it makes you tired. That depth is part of what makes you, you.
+
+I love the way you try. Even on days when you feel weak or unsure, you still try to show up po. You still think about me. You still love me gently. That effort, that strength, means more to me than you know.
+
+I love when you open up, even when it’s scary. The way you share your thoughts, your fears, your hopes. It takes courage to be that real, and I never take that lightly. I love the way you trust me with your heart. So never be afraid to open up to me baby hm? Because I love that.
+
+I love your softness. The way you can be gentle, the way you feel things so carefully, the way you want to be understood and loved. That softness isn’t something that needs fixing—it’s something that deserves to be protected hehe.
+
+I love your maldita side. Even though maka pikon or sige kag pangaway, I still love that about you. Because you're showing me a side of you that's real. You don’t pretend to be calm or perfect just to be loved. You let me see your fire, your emotions, your truth—and I appreciate that more than you know. It makes me feel trusted, like I get to know the real you, not just the easy parts.
+
+I love the way you make time for me. Even though you're with your friends, you still make time for me, you call me and tell me you miss me. That means so much to me than you know. It makes me feel important, remembered, chosen. It reminds me that even when life is busy, I still have a place in your heart.
+
+I love how you’re not afraid to be yourself with me. Loud or quiet. Soft or strong. Happy or upset. You don’t hide who you are, and that makes me feel safe to be myself too. Loving you feels honest, not forced, not fake.
+
+And honestly, one of my favorite things about you is that you’re you. Not perfect. Not always sure. Just real. The way you exist, the way your presence feels, the way my heart feels calmer just knowing you’re here—that’s something I won't ever take for granted.
+
+I love you not just for the things you do—but for who you are when you do nothing at all. Just being you is already enough for me. I love you, not just for one thing. It’s the whole of you. Even the parts you doubt. Especially those parts.`;
+    }
+    else if (topic === "When you’re doubting if I love you enough") {
+        return `If this thought ever crosses your mind, I need you to know this first: my love for you is not quiet because it’s weak. Sometimes it’s quiet because it’s steady. I don’t always show love in big dramatic ways, but I show it in staying, in choosing you again, in caring even when things are hard.
+
+I love you in the way I think about you when you’re not around. In the way I worry about how you’re feeling. In the way I want to understand you instead of giving up. My love isn’t measured by how perfect I am or how I say things baby. It’s measured by how much I choose you, even on days when loving takes effort.
+
+There are moments when I get tired, confused, or unsure of the right words—but that has never meant I care less po. It just means I’m human. My feelings don’t disappear when things get quiet or messy. They stay. I stay.
+
+If you ever feel like my love isn’t enough, please remember this: I wouldn’t be here if I didn’t love you deeply baby. I wouldn’t try, I wouldn’t care, I wouldn’t stay. Loving you is not something I do halfway po. Even when I fall short, my heart is still in this.
+
+My love may not always be loud, but it is real. It is patient. And it is yours, always baby.`;
+    }
+    else if (topic === "When you just want to feel special") {
+        return `You are special baby, very, even on days when nothing feels exciting or new. You don’t have to do something big to deserve attention or love. Just being you already matters more than you think. The way you exist, the way you care, the way you feel things deeply—that alone makes you important to me.
+
+In the way you listen. In the way you remember little things. In the way your presence can make my day feel lighter without you even trying. There’s something about you that can’t be replaced baby, something that no one else brings the way you do.
+
+I want you to know that when I choose you, it’s not out of habit or comfort po. It’s because my heart notices you. It notices your effort, your softness, your strength. Even when you feel unseen or ordinary, you are never invisible to me hm?
+
+You don’t have to compete with anyone baby. You don’t have to compare yourself to anyone else. The place you have in my heart is yours alone. No one else fits there the way you do.
+
+You are loved, you are wanted, and you are deeply special to me—just as you are, right now, without changing a thing.`;
+    }
 
     return `My Darling,\n\nI am writing this note because you are feeling "${topic.toLowerCase().replace('when you', '')}".\n\nClose your eyes, take a deep breath, and imagine me holding your hand right now. You are stronger than you know, and deeply loved.\n\nI'm right here with you.`;
 }
@@ -336,6 +410,3 @@ homeMsg.innerHTML = `I made this for you because I know that life isn’t always
             This is my way of reaching out to you whenever you need me the most. Each page is a reminder that you are deeply loved, cared for, and never alone—even during the toughest days. I want you to have something to open whenever you need encouragement, or comfort.
             <br><br>
             More than anything, I hope this reminds you that I will always choose you, stand by you, and love you in every version of tomorrow. This is my heart in words, saved here for you, because you mean everything to me and I love you.`;
-
-
-
