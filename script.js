@@ -202,6 +202,12 @@ function dragEnd(e) {
 
     currentDragOffset = 0;
     updateCarousel(0, true);
+
+    // FIX: Reset scroll position of all cards when moving to a new chapter
+    const cardContents = document.querySelectorAll('.card-content');
+    cardContents.forEach(content => {
+        content.scrollTop = 0;
+    });
 }
 
 function getLetterContent(topic) {
@@ -491,7 +497,7 @@ Even if I can’t be there physically, I hope you can feel this in your heart. I
 
 Take a slow breath. Pretend my arms are around you. You’re safe in this moment. And you’re cared for more than you know. Virtual huggies for my baby.
 <br><br>
-<center><img src="https://media.tenor.com/kCZjTqCKIGAAAAAC/hug.gif" style="width:100%; max-width:200px; border-radius:10px;"></center>`;
+<center><img src="https://i.pinimg.com/originals/23/f2/63/23f263940d5d2bb8e8eaeb3c128e748f.gif" style="width:100%; max-width:200px; border-radius:10px;"></center>`;
     }
     else if (topic === "When you have something to say but can’t") {
         return `If there are words sitting in your chest but you can’t let them out, that’s okay baby. Not everything comes out easily. Sometimes feelings get stuck. Sometimes you don’t even know how to explain what’s going on inside you. That doesn’t mean your thoughts don’t matter hm.
