@@ -374,6 +374,155 @@ You don’t have to compete with anyone baby. You don’t have to compare yourse
 You are loved, you are wanted, and you are deeply special to me—just as you are, right now, without changing a thing.`;
     }
 
+    // CHAPTER 3
+    else if (topic === "When you’ve had a bad day") {
+        return `Awwhh, I’m really sorry today was hard on my baby. I know some days feel heavier than others, like everything just piles up at once. If today didn’t go the way you hoped, that doesn’t mean you failed hm baby? It just means you’re human, and you did the best you could with what you had.
+
+You don’t have to carry today perfectly. You don’t have to explain everything or pretend you’re okay. It’s enough to just rest for a moment. Breathe baby. Let yourself feel tired without judging yourself for it baby. Bad days don’t erase all the good you’ve done or who you are.
+
+I want you to remember that even on days like this, you’re still cared for hm. You’re still appreciated. You’re still loved, always. Today doesn’t get to decide your worth or your future. It’s just one day, and it will pass baby.
+
+If you can, be gentle with yourself tonight hm? Do something small that brings you comfort baby. And if all you can do is get through the day, that’s already enough. I’m proud of you for making it here, my baby. You’re not alone in this, and tomorrow is another chance to breathe a little easier lovelove ko.`;
+    }
+    else if (topic === "When everything feels too heavy") {
+        return `If everything feels like it’s pressing down on you right now, I want you to slow down for a moment baby. You don’t have to fix anything tonight, omkie? You don’t have to be strong or brave or okay. It’s enough to admit that things feel heavy. That alone already takes effort.
+
+When the weight feels too much, it doesn’t mean you’re weak hm. It means you’ve been carrying a lot for a long time. It means you care deeply, you try hard, and you feel things fully. Anyone would get tired carrying that kind of load.
+
+You’re allowed to rest baby. You’re allowed to pause. You’re allowed to put some of that weight down, even if just for a little while. The world won’t fall apart if you take a breath. You don’t need to have all the answers right now baby.
+
+Please remember this: you don’t have to carry everything alone. Even when you feel like you should handle it by yourself, you don’t have to po ha. You matter enough to be supported, to be understood, to be held gently through hard moments. You matter to me, I'm here.
+
+This feeling won’t last forever baby, even if it feels endless right now. Heavy moments come and go, but you are still here. And that means something. You are still trying. You are still breathing. That’s already more than enough for today.
+
+Be kind to yourself baby. Speak softly to your heart. You don’t need to rush through this hm. One small breath, one small step, one moment at a time—you’ll get through this. And you don’t have to do it alone baby, I'm right here with you, always.`;
+    }
+    else if (topic === "When you’re mentally exhausted") {
+        return `If your mind feels tired and slow, like it’s been running for too long without rest, I want you to know that it makes sense baby. You’ve been thinking, worrying, trying, and holding things together for a while now. Anyone would feel worn out from that po. You’re not failing—you’re just tired.
+
+You don’t need to push yourself right now baby. You don’t need to be productive or strong or positive. It’s okay if your thoughts feel messy or if you can’t focus the way you want to. Mental exhaustion doesn’t mean you’re broken. It means your mind needs kindness, not pressure.
+
+Give yourself permission to rest without guilt. Resting doesn’t mean giving up. It means taking care of yourself so you can keep going later. Even doing nothing for a moment is still doing something good for yourself.
+
+Please be gentle with the way you talk to yourself tonight. You wouldn’t be harsh to someone you love who’s exhausted—so don’t be harsh to yourself. You’ve already done enough for today.
+
+This tired feeling won’t last forever. Your mind will feel lighter again, even if it doesn’t feel close right now. For now, it’s okay to slow down. It’s okay to just exist. You are still worthy, still cared for, still enough—especially on days when your mind is tired.`;
+    }
+    else if (topic === "When you feel like giving up") {
+        return `Baby, if you’re at the point where everything feels pointless and you’re so tired of trying, I need you to pause for a moment po ha, don't think of anything negative. The fact that you’re still here, still breathing, still reading this, already means you haven’t given up baby. Even if your heart feels weak right now, it’s still beating. That matters, okay baby?
+
+It’s okay to feel tired. It’s okay to feel like you don’t have the energy to keep fighting the same battles. But feeling like giving up is not the same as actually being done. Sometimes it just means you’ve been strong for too long without rest.
+
+You don’t have to solve your whole life tonight. You don’t have to fix every problem or decide everything at once. Just focus on one small thing. One breath baby. One hour. One simple step. That’s enough for now hm.
+
+Please don’t forget how far you’ve already come baby. There were days before this that felt impossible too, and somehow you made it through diba? Maybe not perfectly. But you made it. That strength is still inside you, even if it feels quiet.
+
+And if what you really need right now isn’t strength but comfort, then let yourself have that baby. You are allowed to lean on someone, to lean on me. You are allowed to ask for help. You don’t have to carry this alone, you have me.
+
+This moment does not define your whole story hm. It’s a chapter, not the ending. Stay, please. Rest if you need to. Cry if you need to. But don’t disappear, please. The world is better with you in it baby, even if you can’t see that right now. And I’m still here, believing in you until you can believe in yourself again. I'm here for you always, I will catch you when you fall.`;
+    }
+    else if (topic === "When you need motivation") {
+        return `Baby, you don’t need to feel inspired to start. You just need to start small. Motivation doesn’t always come first. Sometimes it shows up after you take one tiny step.
+
+You are more capable than you think hm. You’ve handled hard days before. You’ve learned things you once thought you couldn’t. Growth doesn’t happen in big moments all the time. It happens in quiet effort. In choosing to try again. In getting up even when you don’t feel ready.
+
+Don’t compare your pace to anyone else’s hm. Your journey is yours. Even slow progress is still progress. Even one small task done today is a win. One page. One message. One step forward. That’s enough baby.
+
+You don’t have to be perfect to move forward. You don’t have to have everything figured out. You just need to believe that you’re allowed to try. And you are.
+
+Take a breath baby. Do one thing you’ve been putting off. Just one lang. Let that be your proof that you’re still moving. You’re not behind. You’re not incapable. You’re growing—even now, even slowly.
+
+And I believe in you. Even on the days you don’t believe in yourself. I love you.`;
+    }
+    else if (topic === "When you need a gentle reminder") {
+        return `Are your thoughts getting a little loud again, baby? Maybe you’re being hard on yourself. Let this be your pause.
+
+You are doing better than you think baby. Not perfectly. Not flawlessly. But honestly, and that counts. You wake up and you try. Even on days when you feel tired or unsure, you still try. That matters more than you give yourself credit for.
+
+You don’t have to have everything figured out right now hm. Life isn’t a race with a timer above your head. It’s okay to move at your own pace baby. It’s okay if your progress looks small. Small steps still move you forward.
+
+You are allowed to rest without feeling guilty. You are allowed to say no. You are allowed to protect your peace. Being kind to yourself is not selfish ha. It’s necessary.
+
+And please remember this: one bad moment does not erase all the good in you baby. One mistake does not cancel your worth hm. One hard day does not define your whole story.
+
+Breathe slowly baby. You’re not behind. You’re not failing. You’re just human. And that’s more than enough.`;
+    }
+
+    // CHAPTER 4
+    else if (topic === "When you’re feeling lonely") {
+        return `I want you to know that loneliness doesn’t mean you’re forgotten. It doesn’t mean you don’t matter, baby. It just means your heart is craving connection. And that’s normal.
+
+Even when you’re alone in a room, you are not invisible baby. You are not someone who fades into the background. You are someone who leaves marks on people’s lives—my life—even if you don’t always see it. There are memories you’ve made, conversations you’ve had, small moments where you made someone smile—you made me smile. Those things are real.
+
+Loneliness can trick you into thinking you don’t have anyone. But needing comfort doesn’t mean you have no one hm. It just means you need to feel close again. And that’s okay baby.
+
+If I were with you right now, I’d sit beside you quietly. No pressure to talk. No need to pretend you’re okay. Just presence. Just warmth. Just knowing you don’t have to sit with that heavy feeling by yourself.
+
+This feeling won’t last forever hm. It may visit sometimes, but it doesn’t get to stay permanently. You are worthy of connection. You are worthy of being understood baby. And even in moments when you feel alone, you are still deeply cared for, by me.`;
+    }
+    else if (topic === "When you’re missing me") {
+        return `Awwhh, I miss you more my baby.
+
+If I’m not beside you, it doesn’t mean I’m far from your life hm. You’re still in my thoughts in small, quiet ways. Sometimes something reminds me of you and I smile without even trying. Sometimes I wish I could tell you something right away, just because I want you to be part of my day baby.
+
+Distance, time, or silence can’t erase what we have hm. Missing each other is just proof that our presence means something hehe. It means we’ve built something that feels safe and important.
+
+If your chest feels a little tight and you wish I was there, imagine me thinking of you too. Imagine me wanting to hear your voice, wanting to see your smile, wanting to close that space between us.
+
+I may not always be there physically, but I will always care. I will always show up in the ways I can. And that kind of presence doesn’t fade.`;
+    }
+    else if (topic === "When you wish I was there") {
+        return `I wish I was too, baby. I wish I could sit next to you, hold your hand, or just be quiet together. I know there are moments when you want my presence more than words. And I want you to know that wanting me there doesn’t make you weak. It just means you care, and I appreciate that baby.
+
+Even if I’m not there physically, I’m still with you in the ways that matter. I’m with you in the way I think about you during the day. I’m with you in the way I hope you’re okay. I’m with you in the way I would drop what I’m doing just to listen if you needed me.
+
+If you’re going through something hard, imagine me sitting beside you baby, letting you lean on me. If you’re happy and excited, imagine me smiling proudly next to you. I may not be able to show up in person, but my support is real and steady baby.
+
+Distance doesn’t cancel care hm. Space doesn’t erase love. Just because you can’t see me there doesn’t mean I wouldn’t choose to be.
+
+I’m not as far as it feels. And my heart is always leaning toward you.`;
+    }
+    else if (topic === "When you need a hug") {
+        return `I wish I could give you one in person baby. The kind where you don’t have to say anything. The kind where you just breathe and let yourself relax for a moment. Some days you don’t need advice. You don’t need solutions. You just need to feel held, right?
+
+If your chest feels heavy, let it soften baby. If your thoughts feel loud, let them quiet down for a second. A hug isn’t about fixing everything. It’s about reminding you that you’re not alone in it.
+
+Even if I can’t be there physically, I hope you can feel this in your heart. I would hold you a little longer if you needed it. I wouldn’t rush you. I wouldn’t let go until you felt steady again.
+
+Take a slow breath. Pretend my arms are around you. You’re safe in this moment. And you’re cared for more than you know. Virtual huggies for my baby.
+<br><br>
+<center><img src="https://media.tenor.com/kCZjTqCKIGAAAAAC/hug.gif" style="width:100%; max-width:200px; border-radius:10px;"></center>`;
+    }
+    else if (topic === "When you have something to say but can’t") {
+        return `If there are words sitting in your chest but you can’t let them out, that’s okay baby. Not everything comes out easily. Sometimes feelings get stuck. Sometimes you don’t even know how to explain what’s going on inside you. That doesn’t mean your thoughts don’t matter hm.
+
+You don’t have to force yourself to speak before you’re ready. Take your time. Your feelings are not a burden baby. Your silence is not annoying. If you need space to find the right words, I’ll wait okay?
+
+And if you’re scared of how I might react, please know this: I would rather hear the messy, unsure version of your truth than have you carry it alone baby. You don’t have to say it perfectly. You don’t have to organize it nicely. Just say it the way it comes hm. I care more about understanding you than judging you.
+
+If the words feel too heavy to say out loud, start small. A simple “I don’t know how to explain this” is enough baby. A quiet “Can you just listen?” is enough. You don’t have to do it alone.
+
+Whatever it is, I want to hear it. Even the hard parts. Especially the hard parts. Your voice matters, even when it shakes baby.`;
+    }
+    else if (topic === "When the distance feels too much") {
+        return `Distance can make everything feel louder baby, I know. The silence feels longer. The waiting feels harder. And sometimes it feels unfair that we can’t just reach out and close the gap.
+
+But distance is only space. It’s not the end of us ha. It doesn’t erase the care, the memories, or the way we choose each other. If anything, it shows how strong we are for still holding on even when it’s not easy baby.
+
+I know there are moments when you wish I was right there. When you wish you could just sit next to me without a screen or a call. I wish that too baby. More than you think. But even when miles are between us, my heart still leans toward you.
+
+The distance doesn’t change how I feel hm. It doesn’t make me care less. It doesn’t make me forget. It just means we have to be a little more patient, a little more intentional, a little more brave baby.
+
+This space won’t last forever, okay? And even while it’s here, it doesn’t get to win. We are still choosing each other. We are still here baby. And that matters more than the miles in between.`;
+    }
+    else if (topic === "When you want to feel close to me") {
+        return `You can always tell me when you need to feel closer baby. I won’t think it’s too much. I won’t push you away. I want to know when your heart needs extra attention.
+
+Even if we’re not in the same place, we’re still sharing something real hm. And when you want to feel close to me, just know this: my heart is already leaning toward yours.
+<br><br>
+<center><a href="https://drive.google.com/drive/folders/1te5M2wQK5ISNM4Q9fosUsJLoTGqjxwrK?usp=sharing" target="_blank" class="letter-btn"><i class="fas fa-folder-open"></i> Open Link</a></center>`;
+    }
+
     return `My Darling,\n\nI am writing this note because you are feeling "${topic.toLowerCase().replace('when you', '')}".\n\nClose your eyes, take a deep breath, and imagine me holding your hand right now. You are stronger than you know, and deeply loved.\n\nI'm right here with you.`;
 }
 
@@ -383,12 +532,12 @@ function openLetter(topic) {
     const overlay = document.getElementById('letter-overlay');
     const titleEl = document.getElementById('letter-title');
     const bodyEl = document.getElementById('letter-body');
-    const scrollContainer = document.querySelector('.letter-content-scroll'); // Select the scroll container
+    const scrollContainer = document.querySelector('.letter-content-scroll'); 
 
     titleEl.innerText = topic;
     bodyEl.innerHTML = getLetterContent(topic);
     
-    scrollContainer.scrollTop = 0; // Reset scroll to top
+    scrollContainer.scrollTop = 0; 
     
     overlay.classList.add('open');
 }
