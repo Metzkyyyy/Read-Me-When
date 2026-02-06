@@ -383,9 +383,13 @@ function openLetter(topic) {
     const overlay = document.getElementById('letter-overlay');
     const titleEl = document.getElementById('letter-title');
     const bodyEl = document.getElementById('letter-body');
+    const scrollContainer = document.querySelector('.letter-content-scroll'); // Select the scroll container
 
     titleEl.innerText = topic;
     bodyEl.innerHTML = getLetterContent(topic);
+    
+    scrollContainer.scrollTop = 0; // Reset scroll to top
+    
     overlay.classList.add('open');
 }
 
