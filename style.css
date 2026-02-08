@@ -345,6 +345,7 @@ body {
     font-size: 1.4rem;
     line-height: 1.6;
     white-space: pre-wrap;
+    /* FIX: Ensures words break on small screens */
     overflow-wrap: break-word;
     word-wrap: break-word;
     max-width: 100%;
@@ -448,16 +449,129 @@ body {
 
     .parchment-card-container { width: 90%; max-height: 75vh; }
     
-    /* FIX: Increased Padding to 30px left/right to move text away from the edge/border */
-    .parchment-card { padding: 30px 30px; } 
+    /* FIX: Tighten padding on mobile so text has room */
+    .parchment-card { padding: 25px 15px; } 
 
     .letter-content-scroll { max-height: 55vh; }
     
-    /* FIX: Slightly smaller font to prevent overflow */
+    /* FIX: Make font smaller on mobile so it doesn't overflow */
     .letter-body-cursive {
-        font-size: 1.15rem; 
+        font-size: 1.1rem; /* Smaller than desktop 1.4rem */
         line-height: 1.4;
     }
     
     .wax-seal { width: 50px; height: 50px; font-size: 1.2rem; }
+}
+
+/* --- FLOATING SPOTIFY BUTTON (PINK VERSION) --- */
+.music-fab {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    background-color: #d14d72; /* Romantic Pink */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(209, 77, 114, 0.4); /* Pink Glow */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    border: 1px solid rgba(255,255,255,0.3); /* Glass border */
+    backdrop-filter: blur(5px);
+}
+
+.music-fab:hover {
+    transform: translateY(-3px);
+    background-color: #b03a5d; /* Darker pink on hover */
+    box-shadow: 0 6px 20px rgba(209, 77, 114, 0.6);
+}
+
+.music-fab i {
+    font-size: 1.5rem;
+}
+
+/* --- HIDDEN MUSIC PLAYER MODAL --- */
+.music-player-modal {
+    position: fixed;
+    bottom: 90px;
+    left: 25px;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.music-player-modal.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+.music-card {
+    width: 300px;
+    /* Dark Glass Pink Background */
+    background: rgba(42, 27, 34, 0.95); 
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.music-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #fce4ec; /* Light pink text */
+    padding: 0 5px;
+}
+
+.music-header h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.music-header button {
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.music-header button:hover {
+    color: #d14d72; /* Turn pink on hover */
+}
+
+/* Mobile Adjustment */
+@media (max-width: 768px) {
+    .music-fab {
+        bottom: 20px;
+        left: 20px;
+        padding: 10px 15px;
+    }
+    .mobile-hidden {
+        display: none; 
+    }
+    .music-player-modal {
+        left: 50%; 
+        transform: translateX(-50%) translateY(20px);
+        width: 90%;
+        bottom: 80px;
+    }
+    .music-player-modal.active {
+        transform: translateX(-50%) translateY(0);
+    }
+    .music-card {
+        width: 100%;
+    }
 }
