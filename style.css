@@ -345,7 +345,6 @@ body {
     font-size: 1.4rem;
     line-height: 1.6;
     white-space: pre-wrap;
-    /* FIX: Ensures words break on small screens */
     overflow-wrap: break-word;
     word-wrap: break-word;
     max-width: 100%;
@@ -449,14 +448,14 @@ body {
 
     .parchment-card-container { width: 90%; max-height: 75vh; }
     
-    /* FIX: Tighten padding on mobile so text has room */
-    .parchment-card { padding: 25px 15px; } 
+    /* FIX: Increased Padding to 30px left/right to move text away from the edge/border */
+    .parchment-card { padding: 30px 30px; } 
 
     .letter-content-scroll { max-height: 55vh; }
     
-    /* FIX: Make font smaller on mobile so it doesn't overflow */
+    /* FIX: Slightly smaller font to prevent overflow */
     .letter-body-cursive {
-        font-size: 1.1rem; /* Smaller than desktop 1.4rem */
+        font-size: 1.15rem; 
         line-height: 1.4;
     }
     
