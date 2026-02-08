@@ -495,83 +495,100 @@ body {
     font-size: 1.5rem;
 }
 
-/* --- HIDDEN MUSIC PLAYER MODAL --- */
-.music-player-modal {
+/* --- MUSIC PLAYER MODAL MASTER FIX --- */
+#music-player-modal {
     position: fixed;
     bottom: 90px;
     left: 25px;
-    z-index: 2000;
+    z-index: 3000;
     opacity: 0;
     pointer-events: none;
     transform: translateY(20px);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.music-player-modal.active {
+#music-player-modal.active {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0);
 }
 
-.music-card {
-    width: 300px;
-    /* Dark Glass Pink Background */
-    background: rgba(42, 27, 34, 0.95); 
+/* The Card Container */
+#music-player-modal .music-card {
+    width: 300px !important;
+    background: rgba(42, 27, 34, 0.98) !important; 
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    padding: 15px;
+    padding: 15px !important;
     box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    display: flex !important;
+    flex-direction: column !important;
 }
 
-.music-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    color: #fce4ec; /* Light pink text */
-    padding: 0 5px;
+/* The Header: Forces Title Left, X Right */
+#music-player-modal .music-header {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important; /* Title start, X end */
+    align-items: center !important;
+    width: 100% !important;
+    margin-bottom: 15px !important;
+    background: transparent !important;
 }
 
-.music-header h3 {
+/* The Title */
+#music-player-modal .music-header h3 {
+    margin: 0 !important;
+    padding: 0 !important;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    margin: 0;
+    font-size: 0.95rem;
+    color: #fce4ec;
+    text-align: left !important;
 }
 
-.music-header button {
-    background: transparent;
-    border: none;
-    color: rgba(255,255,255,0.6);
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: color 0.3s;
+/* The X Button: Killing the White Box */
+#music-player-modal .music-header button {
+    all: unset !important; /* Deletes ALL browser default styles */
+    cursor: pointer !important;
+    color: rgba(255,255,255,0.6) !important;
+    font-size: 1.5rem !important;
+    line-height: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 30px !important;
+    height: 30px !important;
+    background: transparent !important; /* No white box */
+    border: none !important;
+    -webkit-tap-highlight-color: transparent !important; /* No tap box on mobile */
 }
 
-.music-header button:hover {
-    color: #d14d72; /* Turn pink on hover */
+#music-player-modal .music-header button:hover {
+    color: #d14d72 !important;
 }
 
-/* Mobile Adjustment */
+/* --- MOBILE SPECIFIC --- */
 @media (max-width: 768px) {
-    .music-fab {
-        bottom: 20px;
-        left: 20px;
-        padding: 10px 15px;
-    }
-    .mobile-hidden {
-        display: none; 
-    }
-    .music-player-modal {
-        left: 50%; 
+    #music-player-modal {
+        left: 50% !important;
+        bottom: 85px !important;
         transform: translateX(-50%) translateY(20px);
-        width: 90%;
-        bottom: 80px;
+        width: 90% !important;
+        max-width: 340px !important;
     }
-    .music-player-modal.active {
+
+    #music-player-modal.active {
         transform: translateX(-50%) translateY(0);
     }
-    .music-card {
-        width: 100%;
+
+    #music-player-modal .music-card {
+        width: 100% !important;
+        max-height: 50vh !important; /* Prevents long scrolling */
+    }
+
+    /* Shrink iframe on mobile so it doesn't push off screen */
+    #music-player-modal iframe {
+        height: 152px !important; 
     }
 }
