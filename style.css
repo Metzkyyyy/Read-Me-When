@@ -315,7 +315,11 @@ body {
     text-align: center; 
     scrollbar-width: thin;
     scrollbar-color: #a67c52 transparent;
-    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-behavior: smooth;
+    
+    /* FIX: Prevents text from overflowing */
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
 }
 
 .card-monogram {
@@ -341,6 +345,10 @@ body {
     font-size: 1.4rem;
     line-height: 1.6;
     white-space: pre-wrap;
+    /* FIX: Ensures words break on small screens */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 
 .close-letter {
@@ -354,7 +362,6 @@ body {
     z-index: 20; 
 }
 
-/* UPDATED WAX SEAL STYLE */
 .wax-seal {
     width: 70px;
     height: 70px;
@@ -371,10 +378,8 @@ body {
     text-shadow: 1px 1px 1px rgba(255,255,255,0.2), -1px -1px 1px rgba(0,0,0,0.5);
     border: 3px solid #943535;
     transform: rotate(-15deg);
-    
-    /* New Positioning */
-    margin: 30px auto 10px auto; /* Centers it at the bottom */
-    position: relative; /* Scrolls with text */
+    margin: 30px auto 10px auto;
+    position: relative;
     z-index: 10;
 }
 
@@ -443,7 +448,17 @@ body {
     }
 
     .parchment-card-container { width: 90%; max-height: 75vh; }
-    .parchment-card { padding: 25px 15px; }
+    
+    /* FIX: Tighten padding on mobile so text has room */
+    .parchment-card { padding: 25px 15px; } 
+
     .letter-content-scroll { max-height: 55vh; }
+    
+    /* FIX: Make font smaller on mobile so it doesn't overflow */
+    .letter-body-cursive {
+        font-size: 1.1rem; /* Smaller than desktop 1.4rem */
+        line-height: 1.4;
+    }
+    
     .wax-seal { width: 50px; height: 50px; font-size: 1.2rem; }
 }
