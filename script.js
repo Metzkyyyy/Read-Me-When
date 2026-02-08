@@ -203,7 +203,7 @@ function dragEnd(e) {
     currentDragOffset = 0;
     updateCarousel(0, true);
 
-    // FIX: Reset scroll position of all cards when moving to a new chapter
+    // Reset scroll position of all cards when moving to a new chapter
     const cardContents = document.querySelectorAll('.card-content');
     cardContents.forEach(content => {
         content.scrollTop = 0;
@@ -527,6 +527,379 @@ This space won’t last forever, okay? And even while it’s here, it doesn’t 
 Even if we’re not in the same place, we’re still sharing something real hm. And when you want to feel close to me, just know this: my heart is already leaning toward yours.
 <br><br>
 <center><a href="https://drive.google.com/drive/folders/1te5M2wQK5ISNM4Q9fosUsJLoTGqjxwrK?usp=sharing" target="_blank" class="letter-btn"><i class="fas fa-folder-open"></i> Open Link</a></center>`;
+    }
+
+    // CHAPTER 5
+    else if (topic === "When you feel like crying") {
+        return `If your eyes are starting to sting and your chest feels tight, don’t fight it baby. Crying doesn’t mean you’re weak, okay? It doesn’t mean you lost control. It just means your heart is full and needs a way to let some of it out.
+
+You’ve probably been holding a lot inside. Maybe you tried to stay strong. Maybe you told yourself it wasn’t a big deal. But feelings don’t disappear just because we ignore them. They stay until we let them move through us.
+
+So if you need to cry, cry baby. Let the tears fall. You don’t have to look pretty. You don’t have to explain yourself. You don’t have to apologize for feeling deeply. Your emotions are not something to be ashamed of hm.
+
+If I were there, I wouldn’t rush you to stop. I’d just sit beside you. Maybe hold your hand. Maybe wipe your tears gently. I’d remind you that it’s okay to feel this way.
+
+Crying is not the end of you baby. Sometimes it’s the beginning of relief. Let it out baby. Breathe through it. And when you’re done, you’ll still be here. Still strong. Still worthy. Just a little lighter than before.`;
+    }
+    else if (topic === "When you’re crying") {
+        return `If tears are already falling while you’re reading this, it’s okay baby. You don’t have to stop them. You don’t have to be strong right now. Let yourself feel it hm.
+
+I know sometimes you try to hold everything in. You try to stay composed, to not make a scene, to not seem “too emotional.” But your tears are not a problem baby. They are proof that your heart feels deeply. And that is not something to be ashamed of.
+
+Whatever made you cry matters. Even if it feels small to someone else. Even if you can’t fully explain it. If it hurt you, then it’s real.
+
+I wish I could be there to hold you. I wouldn’t rush you. I wouldn’t tell you to calm down. I’d just stay. I’d let you cry as long as you needed. I’d remind you that this moment doesn’t define you.
+
+You’re not weak for crying. You’re overwhelmed. You’re tired. You’re human. And you are still worthy of love even with tears on your face baby.
+
+Breathe slowly, okay? Inhale. Exhale. Let your body settle little by little. The wave will pass. You can always lean on me.`;
+    }
+    else if (topic === "When something’s bothering you") {
+        return `If something is sitting heavy in your chest right now baby, don’t ignore it. If it’s bothering you, then it matters, okay? You don’t have to convince yourself it’s “not a big deal.” Your feelings don’t need permission to exist.
+
+Maybe you’re overthinking. Maybe you’re hurt. Maybe you’re just uncomfortable and can’t explain why. That’s okay baby. You don’t need to have perfect words for it. You don’t need to sort it out alone before bringing it to me po ha.
+
+If something I did or said bothered you, I would rather know than have you quietly carry it. I care more about understanding you than being right. You’re not difficult for speaking up baby. You’re not dramatic for feeling deeply.
+
+And if it’s something else bothering you, you don’t have to face it by yourself. You can tell me. Even if it comes out messy. Even if it doesn’t make full sense yet.
+
+What you feel is important because you are important baby. Don’t shrink your emotions just to keep the peace. Let’s handle it together instead of letting it sit between us, okay?
+
+Whatever it is, I’m here to listen.`;
+    }
+    else if (topic === "When you’re overthinking") {
+        return `If your mind is running in circles right now, pause for a moment baby. Take one slow breath. Overthinking can make small things feel huge. It can turn silence into fear. It can turn “maybe” into “what if everything goes wrong.”
+
+But not every thought is a fact, okay?
+
+Your mind is trying to protect you. It’s trying to prepare you for hurt before it even happens. But sometimes it creates stories that aren’t real. Sometimes it fills in blanks with the worst possibilities.
+
+Before you believe those thoughts, ask yourself gently: Do I know this for sure? Most of the time, the answer is no baby.
+
+If you’re overthinking about me, please remember this: if something is wrong, I will tell you. You don’t have to search for hidden meanings po. You don’t have to read between lines that aren’t there. I’m not secretly pulling away, okay? I’m not keeping score. I’m here baby.
+
+It’s okay to feel anxious. It’s okay to need reassurance. Just don’t let your thoughts bully you into believing you’re not enough or that everything is falling apart.
+
+Right now, focus on something real. The feeling of your feet on the floor. The sound around you. The air going in and out of your lungs. Come back to the present.
+
+Your thoughts are loud, but they are not always true. And you don’t have to fight them alone. I'm willing to listen, always.`;
+    }
+    else if (topic === "When you feel like I don’t understand you") {
+        return `If you ever feel like I’m not getting you, like I’m missing something important about how you feel, I want you to know that it’s not because I don’t care baby. Sometimes I may not understand right away. Sometimes I might respond the wrong way. But that doesn’t mean I don’t want to understand po.
+
+You are not “too complicated.” You are not “too much.” You just feel deeply, and sometimes that depth takes time to learn. And I am willing to learn you baby.
+
+If I misunderstand you, please don’t close yourself off. Help me see what I’m missing, please. Tell me what it feels like from your side. Even if your voice shakes. Even if you’re scared I won’t get it. I would rather try again than have you feel alone next to me po.
+
+Understanding doesn’t always happen in one conversation. Sometimes it takes patience. Sometimes it takes listening more than talking. But I promise you this: I care enough to try baby.
+
+If you ever feel unseen, tell me hm? If you ever feel unheard, tell me. I don’t want you to shrink your feelings just because I didn’t catch them the first time.
+
+You matter to me. And understanding you isn’t a burden. It’s something I want to keep working on.`;
+    }
+    else if (topic === "When you don’t know why you’re sad") {
+        return `If your chest feels heavy and your eyes feel wet, but you can’t explain why, that’s okay baby. You don’t always need a reason to feel sad. Emotions don’t always come with explanations. Feeling low doesn’t make you weak, and it doesn’t mean something is wrong with you.
+
+Sometimes your heart is just tired. Sometimes your mind is storing things you didn’t even notice. Sometimes it’s a quiet signal that you need care, rest, or gentleness. You don’t have to figure it all out right now hm. You don’t have to name it or fix it. You just have to feel it, and let yourself be.
+
+You’re not alone in feeling this—even if it feels confusing, even if you don’t understand why.
+
+Breathe slowly baby. Let the sadness pass through without judgment. It doesn’t define you. It doesn’t make you less, okay? And even when you feel heavy and quiet, you are still enough. You are still loved. And this moment will not last forever. I'll always be with you.`;
+    }
+    else if (topic === "When you feel like everything is falling apart") {
+        return `I know how it feels when your world is breaking into pieces right know.. When one thing goes wrong and suddenly it feels like everything is wrong. When your chest feels tight and your thoughts start racing with “what now?” and “I can’t handle this.”
+
+But listen to me gently baby: just because things feel out of control doesn’t mean your whole life is collapsing, okay?
+
+When everything feels like it’s falling apart, it’s usually because too many things hit at once. Your mind gets overwhelmed. Your heart gets tired. And it starts to believe the worst. But this moment, as heavy as it feels, is still just a moment hm.
+
+You have survived hard days before. Days you thought would break you. And yet here you are baby. Not untouched. Not unchanged. But still standing.
+
+It’s okay if you don’t know how to fix everything. You don’t have to rebuild your whole world tonight baby. Just find one small thing you can control. One message. One task. One breath. When everything feels big, go small.
+
+And please remember this po: you don’t have to hold everything together alone. You don’t have to be the strong one all the time. It’s okay to admit you’re overwhelmed. It’s okay to lean on someone, to lean on me.
+
+Things may feel like they’re falling apart, but you are not falling apart beyond repair. You are human. You are tired. You are overwhelmed. And that is different from being broken, okay?
+
+This storm will not last forever. And even in the middle of it, you are still here. I will always catch you when you fall apart. You are not alone in this, you have me.`;
+    }
+    else if (topic === "When you just want someone to listen") {
+        return `Sometimes you don’t need answers. You just need space to speak without being corrected or rushed.
+
+You can talk to me baby.
+
+You don’t have to organize your thoughts. You don’t have to make it sound calm or reasonable. If it comes out messy, that’s okay hm. If you repeat yourself, that’s okay. If you cry in the middle of it, that’s okay too.
+
+I won’t interrupt you just to prove a point. I won’t turn it into a lecture. I won’t make it about me. I’ll just listen, okay?
+
+Your feelings deserve to be heard fully. Not minimized. Not compared. Not brushed aside.
+
+And if you can’t even find the right words yet, you can start with something simple like, “Can you just listen?” That’s enough. I’ll understand baby.
+
+You don’t have to carry your thoughts alone. Sometimes healing isn’t about advice. Sometimes it’s just about being heard. And I’m here for that, always.`;
+    }
+
+    // CHAPTER 6
+    else if (topic === "When we’re fighting") {
+        return `Baby, if we’re in the middle of an argument right now, and everything feels tense or sharp, I need you to remember this first: I am not your enemy, okay? We might be upset. We might misunderstand each other. But it’s still us, not me versus you po.
+
+Fighting doesn’t mean I stopped caring. It doesn’t mean I’m secretly giving up. Sometimes it just means we both feel strongly and don’t know how to say it gently yet po.
+
+I know words can come out wrong when emotions are high. I know silence can feel scary. But one hard conversation does not erase everything good between us baby. One disagreement does not cancel the love we built.
+
+If I sound distant, it’s not because I want to lose you po ha. Sometimes I just need a moment to calm down so I don’t say something careless. I would rather pause than hurt my baby.
+
+Even when we’re frustrated, even when we don’t see eye to eye, I still choose you. I still want to fix it. I still want us to understand each other instead of walking away.
+
+If it feels messy right now, hold on please. We are allowed to disagree. We are allowed to feel. What matters is that we come back to each other after.
+
+It’s still us baby. And I’m not going anywhere just because we’re having a hard moment, okay? I love you, I always do.`;
+    }
+    else if (topic === "When you’re jealous") {
+        return `Don’t be ashamed of it, okay baby? Tell me. Jealousy doesn’t mean you’re crazy or insecure. It usually just means you care. It means something feels important to you, and you’re scared of losing it.
+
+I don’t see your jealousy as something ugly hm. I see it as a sign that your heart wants reassurance. And that’s okay. You don’t have to pretend you’re unbothered just to seem strong.
+
+But please remember this baby: I choose you. Not by accident. Not out of convenience. I choose you because I want you. No one else replaces what you are to me. No one else holds your place.
+
+If your mind starts creating stories, pause for a second please. Ask me instead of assuming po ha. I would rather reassure you than have you silently spiral. You are not “too much” for needing comfort.
+
+And if I ever do something that triggers that feeling, tell me. Not to fight. Not to accuse. Just to understand each other better. We’re on the same side baby.
+
+Jealousy doesn’t scare me. Silence does. So talk to me, okay? Let me remind you that you are wanted, chosen, and secure with me.`;
+    }
+    else if (topic === "When I’ve hurt your feelings") {
+        return `If I’ve hurt you, even in a small way, I need you to know that your feelings matter to me baby. I never want to be the reason you feel pain. And if I was careless, impatient, or didn’t think before I spoke, I’m really sorry.
+
+Sometimes I don’t realize the weight of my words right away. Sometimes I respond from emotion instead of understanding. But that doesn’t mean I don’t care. It just means I’m still learning how to love you better.
+
+Please don’t hide your hurt just to keep the peace po ha. If something I did made you feel small, unseen, or unimportant, I want to know. Not so I can defend myself—but so I can fix it po. So I can grow.
+
+Hurting you is never my goal. Loving you is. And loving you means being responsible when I fall short.
+
+You deserve to feel safe with me. You deserve to feel respected. If I broke that in any way, I’m willing to listen, to apologize properly, and to do better.
+
+I care about you too much to ignore your pain baby.`;
+    }
+    else if (topic === "When you’re mad at me") {
+        return `If you’re mad at me right now, I want you to know that it’s okay baby. You have every right to feel upset. Your feelings are valid, even if I don’t fully understand them yet. Being angry doesn’t mean you love me any less right? It just means something matters to you, and I respect that baby.
+
+I’m not upset that you’re mad. I might feel sad if our connection feels strained, but I would never want you to hide your feelings just to protect me po. I would rather you be honest and tell me what’s wrong than keep it inside.
+
+If I hurt you, even unintentionally, I’m sorry baby. I want to understand what I did and how it made you feel. I don’t expect you to forgive me instantly, but I want you to know that I care enough to listen and try to make it right.
+
+Anger can feel heavy, but it doesn’t change my feelings for you. I’m still here. I’m still on your side baby. And I’m still choosing you, even when we fight or disagree.
+
+Take the time you need to feel what you feel. When you’re ready, we’ll talk okay? And I promise to hear you fully, without rushing, without interrupting, and without dismissing your emotions.
+
+You are important to me—mad or not. Always.`;
+    }
+    else if (topic === "When I’m being hard to handle") {
+        return `If I seem difficult right now… if I’m moody, quiet, distant, or reacting in ways that don’t make sense, please don't take it the wrong way baby, it’s not because I don’t care about you. Sometimes I get overwhelmed. Sometimes I don’t know how to handle what I’m feeling, and it spills out the wrong way.
+
+I know I’m not always easy. I know I can be stubborn, sensitive, or shut down when things feel too much. But even in those moments, I’m not trying to push you away po. I’m just trying to figure myself out.
+
+You don’t have to “fix” me. You don’t have to carry my emotions for me. I just hope you can be patient while I sort through them po. And if I ever cross a line or hurt you because I’m overwhelmed, I want you to tell me hm. I don’t want my hard moments to make you feel small.
+
+Being hard to handle doesn’t mean I don’t love you baby. It doesn’t mean I’m giving up. It just means I’m human and still learning how to manage my feelings better.
+
+Thank you for staying calm when I can’t. Thank you for not walking away at the first sign of mess baby. I’m trying. Even when it doesn’t look like it.`;
+    }
+    else if (topic === "When you feel like we’re not okay") {
+        return `If something feels off between us right now… if the energy feels different or the silence feels heavier, I want you to pause before your mind runs too far baby. One quiet moment does not mean everything is breaking, okay?
+
+We won’t always feel perfect. We won’t always be in sync every second. That’s normal. Real connection isn’t about never having tension. It’s about choosing each other even when things feel unsure.
+
+If you feel distance, talk to me. Don’t sit alone with the fear that we’re falling apart po. I would rather know what’s bothering you than have you quietly worry that we’re not okay.
+
+Just because we hit a rough patch doesn’t mean we’re ending, okay? Just because a conversation felt awkward doesn’t mean love disappeared hm. Feelings can be heavy sometimes, but that doesn’t erase what we built.
+
+I’m still here. I’m still choosing this. If something feels wrong, let’s fix it together instead of assuming the worst, okay baby?
+
+We don’t have to be perfect to be okay. We just have to keep choosing each other baby.`;
+    }
+    else if (topic === "When you’re scared of losing me") {
+        return `Baby, fear can be loud. It can make you believe things that aren’t happening.
+
+I am not halfway here. I am not secretly preparing to walk away. I am here because I want to be. Because I choose you, baby.
+
+Being scared of losing someone usually means they matter deeply to you. And that matters to me. But please don’t let fear convince you that something is ending when it’s not. One quiet moment, one bad day, one misunderstanding does not mean I’m disappearing.
+
+If I ever feel unsure about something, I will talk to you. I won’t just vanish baby. You deserve clarity, not guessing games.
+
+You don’t have to hold on tightly out of fear. I’m not something that slips away that easily hm. I stay because I care. I stay because I want to build, not run.
+
+You are not about to lose me. I’m still here. And I’m still choosing you.`;
+    }
+    else if (topic === "When you don’t know what to do") {
+        return `If we’re in the middle of tension and you feel frozen… if you don’t know whether to speak, stay quiet, defend yourself, or walk away for a bit, breathe first baby. You don’t have to react perfectly. Conflict isn’t a test you have to pass, okay?
+
+It’s okay if you don’t always know the right words. It’s okay if you need a moment to sort through your thoughts. Silence doesn’t mean you don’t care. Sometimes it just means you’re trying not to make things worse.
+
+When you don’t know what to do, choose something simple po: stay respectful. Stay honest. Stay open. Even saying, “I don’t know how to explain this yet, but I want to fix it,” is enough baby.
+
+You don’t have to win. You don’t have to prove a point. The goal isn’t to defeat each other po. It’s to understand each other. We’re not on opposite teams.
+
+If emotions feel too strong, it’s okay to pause and come back calmer hm. Taking space to breathe is better than saying something you’ll regret.
+
+Conflict doesn’t mean we’re broken baby. It just means we’re two different people learning how to meet in the middle. And not knowing what to do sometimes? That just means you care enough to want to handle it right.`;
+    }
+    else if (topic === "When you feel like we can’t fix this") {
+        return `If it feels too big right now… too messy, too painful, too far gone… calm down baby. Strong emotions can make problems look permanent. But most things feel impossible when we’re overwhelmed.
+
+Just because it’s hard doesn’t mean it’s hopeless.
+
+We might not know the solution yet. We might both be hurt. We might both be tired. But not knowing how to fix something right away doesn’t mean it’s unfixable, okay? It just means we need time, patience, and honesty.
+
+Nothing meaningful is built without moments that feel shaky. Every close connection goes through days where it feels uncertain. What matters isn’t that we struggle. What matters is whether we’re both still willing to try.
+
+If you’re scared that this is the end, talk to me before deciding that in your head baby. Don’t let fear close a door that communication could open po.
+
+We don’t have to solve everything tonight. We just have to take one small step toward understanding instead of walking away.
+
+If we both still care, there is something to work with. And as long as there’s care, there’s hope.`;
+    }
+    else if (topic === "When my words are too harsh or is hurting you") {
+        return `If something I said cut deeper than I meant it to, I’m really sorry. I never want my words to be something that makes you feel small, unsafe, or unloved. Sometimes when I’m overwhelmed or emotional, my tone gets sharp before my heart can catch up. But that’s an explanation—not an excuse.
+
+You don’t deserve to be spoken to in a way that hurts baby.
+
+If my words made you question your worth or my care for you, please know that hurting you was never my intention. I care about you too much to want to cause pain. And if I did, I want to take responsibility for it.
+
+Please don’t keep it inside just to avoid another argument. Tell me baby. Even if it’s uncomfortable. I would rather feel embarrassed for speaking harshly than have you silently carry hurt because of me.
+
+I’m still learning how to handle my emotions better. I’m still learning how to speak with patience instead of reacting quickly. But I promise you this—I want to grow. I want to be someone whose words feel safe, not sharp.
+
+You deserve gentleness. And if I failed at that in a moment, I’m willing to listen, apologize properly, and do better for you.`;
+    }
+    else if (topic === "When you feel like we’re drifting apart") {
+        return `Distance in feeling doesn’t always mean distance in love.
+
+Sometimes life gets loud baby. Sometimes we get tired. Sometimes we fall out of rhythm for a while. That doesn’t automatically mean we’re falling apart.
+
+If you feel a shift, tell me please. Don’t sit alone with the thought that we’re slowly losing each other. I would rather know what feels different to you so we can adjust together.
+
+Drifting only becomes permanent when we stop trying. And I’m still trying. I’m still here. I’m still choosing this.
+
+Not every phase will feel intense or perfect. Some seasons are quieter. Some are heavier. But quiet doesn’t mean empty. It just means we might need to reach for each other a little more on purpose po.
+
+If you’re scared we’re drifting, take my hand instead of letting go. Let’s talk baby. Let’s check in. Let’s close the space instead of assuming it’s too wide to cross.
+
+We’re not lost. We might just need to steer back toward each other, okay?`;
+    }
+
+    // CHAPTER 7
+    else if (topic === "When I’m jealous") {
+        return `If I’m jealous baby, it's not because I don’t trust you po ha. Not because I want to control you. But because sometimes I get scared po.
+
+Jealousy doesn’t mean I think you’re doing something wrong. It usually just means I care deeply and I’m afraid of losing what we have po. It’s not always logical. Sometimes it’s just my heart reacting before my mind can calm it down.
+
+If I ever show it in the wrong way, I’m sorry po. I’m still learning how to say, “I need reassurance,” instead of letting it come out as attitude or silence po.
+
+Please understand that when I feel jealous, what I really need is comfort. A reminder po. A small reassurance that I’m still chosen, still wanted, still important to you.
+
+I don’t want jealousy to create distance between us. I want it to become something we talk about safely. I don’t want to accuse you po. I just want to feel secure with you baby.
+
+If I seem a little off, don’t see it as me attacking you please? See it as me needing a little extra closeness. I’m not trying to control. I’m just trying to protect something I care about deeply po.`;
+    }
+    else if (topic === "When you know something’s bothering me") {
+        return `If you can tell something’s off with me, you’re probably right po. I’m not always good at saying what’s wrong right away. Sometimes I need time to sort through my feelings before I can explain them clearly.
+
+If I’m quieter than usual or a little distant, it doesn’t mean I’m pulling away from you po ha? It usually means I’m overwhelmed and trying not to react the wrong way. I don’t want my emotions to turn into something that hurts us po.
+
+Please don’t assume the worst baby. And please don’t feel like you have to fix me immediately. Sometimes I just need patience. Sometimes I just need you to ask gently, “Do you want to talk about it?” and let me come to you when I’m ready.
+
+If something you did hurt me, I promise I’m not keeping score po. I just need a moment to understand how I feel before I speak. I don’t want to say things out of emotion that I don’t fully mean.
+
+What matters is this: if something’s bothering me, it doesn’t mean I love you less okay? It doesn’t mean I’m planning to leave. It just means I’m human and still learning how to handle my feelings in a healthy way po.
+
+Your calmness, your patience, your gentle approach—those help more than you know baby.`;
+    }
+    else if (topic === "When I won’t open up") {
+        return `If I’m quiet when something is clearly bothering me, please don’t think I don’t trust you baby. Sometimes I struggle to explain what I’m feeling. Sometimes I don’t even understand it myself yet.
+
+When I don’t open up right away, it’s not because I don’t care po. It’s usually because I’m scared of saying the wrong thing, or making things bigger than they need to be. Sometimes I’m afraid of being misunderstood po. Sometimes I just need time to process.
+
+Please be patient with me baby.
+
+A gentle “I’m here when you’re ready” means more than pressure ever will po. I open up best when I feel safe, not rushed. When I know I won’t be judged or dismissed po.
+
+If I stay quiet for a while, it doesn’t mean I’m pulling away po ha? It means I’m trying to sort through my thoughts so I can speak clearly instead of emotionally.
+
+And when I finally do talk, even if it comes out messy, I hope you’ll listen with softness po baby. I don’t shut down because I don’t care. I shut down because I care too much and I’m trying to protect what we have po.
+
+I may take time. But I don’t close my heart forever, hm?`;
+    }
+    else if (topic === "When I’m not okay") {
+        return `If I tell you I’m fine but you can tell I’m not… you’re probably right. Sometimes “I’m okay” is just easier than explaining everything that’s going on inside me po.
+
+When I’m not okay, I might get quiet. Or distant. Or a little more sensitive than usual. It’s not because I don’t care about you po. It’s usually because I’m trying to hold myself together without letting everything spill out at once.
+
+Please don’t take my quiet moments as rejection. And please don’t think you did something wrong right away. Sometimes I’m just fighting battles in my own head po.
+
+What helps the most isn’t pressure. It’s patience. A simple “I’m here” means more than a hundred questions. Knowing I can lean on you without being judged makes it easier for me to open up po.
+
+When I’m not okay, I don’t need you to fix me. I just need you to stay po. To remind me gently that I’m not alone. That it’s safe to feel. That I don’t have to pretend.
+
+I won’t always be strong. I won’t always know how to explain my emotions. But even when I’m not okay, I still care. I still choose you baby. And I’m still trying.`;
+    }
+    else if (topic === "When I’m being cold") {
+        return `If I seem distant, short, or colder than usual, please don’t think I stopped caring baby. When I get cold, it’s usually because I’m hurt, overwhelmed, or protecting myself in the only way I know how.
+
+Sometimes I shut down before I even realize I’m doing it. It’s like my heart puts up a wall because it feels too much at once. I don’t go cold because I don’t love you baby. I go cold because I’m scared of feeling too deeply or reacting in a way that could hurt us po.
+
+If I’m being quiet or less affectionate, please don’t fight fire with fire po. A little warmth from you goes a long way. A calm tone. A soft “what’s wrong?” That helps me melt faster than you think po.
+
+I don’t always know how to say, “That hurt me,” or “I’m overwhelmed,” in the moment. So it sometimes comes out as silence instead. I’m still learning how to express things better.
+
+When I’m being cold, what I actually need is reassurance po. Patience. A reminder that we’re safe, that we’re okay, that you’re not giving up on me just because I’m having a hard moment.
+
+I promise I’m not pulling away baby. I’m just trying to sort through my feelings without breaking what we have.
+
+And even when I seem distant, my heart is still right there with you.`;
+    }
+    else if (topic === "When I’m mad at you") {
+        return `If I’m upset with you baby, please know this first—I’m mad because I care. If you didn’t matter to me, your actions wouldn’t affect me the way they do.
+
+When I’m mad, it might come out as silence. Or short replies. Or a little attitude. Sometimes I need space to cool down because I don’t want to say something I’ll regret. I never want my anger to damage us.
+
+Being mad doesn’t mean I’m done po ha? It doesn’t mean I’m thinking about leaving. It just means something hurt me and I’m trying to process it.
+
+Please don’t walk away from me when I’m angry po. Don’t assume the worst. Give me a little time, but stay close enough that I know we’re still okay. A simple, calm “Let’s fix this” means more than you think po.
+
+I don’t want to fight to win. I want to understand and be understood po. I want us to solve it, not score points.
+
+Even when I’m mad, I still love you. Even when I’m frustrated, I still choose you baby. My anger is temporary. My feelings for you are not, okay?
+
+So if I’m upset, hold onto that truth—I’m not fighting against you. I’m fighting for us, omkie?`;
+    }
+    else if (topic === "When you hurt my feelings") {
+        return `If something you said or did hurt me, please know I’m not trying to make you feel bad po. I’m not trying to blame you. I just need you to understand that I felt something real.
+
+When my feelings get hurt, I might go quiet. I might overthink. I might act a little distant. It’s not because I want to punish you po. It’s because I’m trying to figure out why it hurt and how to explain it without making things worse.
+
+I don’t expect you to be perfect man po. I know we’re both human. I just want to feel safe enough to say, “That hurt me,” without it turning into a bigger fight po.
+
+When I open up about being hurt, please listen without defending yourself right away po. Even a simple “I didn’t mean to hurt you” or “I’ll do better next time” can make my heart soften so fast.
+
+I don’t hold onto pain because I want to. I let go when I feel understood po.
+
+If you hurt my feelings, it doesn’t mean I love you less, okay? It just means I care enough to want us to do better next time.
+
+I don’t need perfection. I just need effort, honesty, and a heart that’s willing to meet mine halfway baby.`;
+    }
+    else if (topic === "When I’m ignoring you") {
+        return `If I’m not replying the way I usually do, or I seem distant on purpose, please don’t think I stopped caring baby. When I ignore you, it’s rarely because I don’t love you. It’s usually because I’m overwhelmed, hurt, or trying to calm down before I say something I don’t mean.
+
+Sometimes I go quiet because I don’t trust my emotions in that moment. I would rather step back than speak out of anger and cause more damage. Silence is not my way of punishing you po. It’s my way of protecting us while I sort myself out.
+
+Please don’t chase me with anger baby. Don’t match my silence with more silence please. A gentle “I’m here when you’re ready” means more than pressure ever could.
+
+If I’m ignoring you, it probably means I care too much and I’m scared of making things worse p. I don’t want distance between us. I just need a little time to breathe.
+
+And when I come back, I hope you’ll meet me with calmness instead of resentment po. I promise I’m not disappearing. I’m just trying to handle my feelings in a way that won’t hurt what we have.
+
+Even in my silence, my heart is still with you baby.`;
     }
 
     return `My Darling,\n\nI am writing this note because you are feeling "${topic.toLowerCase().replace('when you', '')}".\n\nClose your eyes, take a deep breath, and imagine me holding your hand right now. You are stronger than you know, and deeply loved.\n\nI'm right here with you.`;
