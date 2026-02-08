@@ -2,65 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Only For You</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Parisienne&family=Segoe+UI:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Dancing+Script:wght@500;700&family=Montserrat:wght@300;400;500&family=Parisienne&family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <div class="nav-container">
         <button class="nav-btn active" onclick="switchView('home')">Home</button>
-        <button class="nav-btn" onclick="switchView('chapters')">Read Me When</button>
+        <button class="nav-btn" onclick="switchView('chapters')">Chapters</button>
+        <button class="nav-btn" onclick="switchView('us')">Us</button>
     </div>
 
     <div class="content-wrapper">
-        
+
         <div id="home-view" class="view-section active-view">
             <div class="home-card">
                 <h1>I love you, my Ally</h1>
-                <div class="home-message">
-                    </div>
+                <p class="home-message">
+                    I made this for you because I know that life isn’t always easy, and there will be moments when things feel heavy, confusing, or even overwhelming. There will be days when words are hard to find, or when I can’t always be there to say them out loud.
+                    <br><br>
+                    I may not be physically beside you, but I want you to know that my love is always with you no matter the time or place. This is my way of reminding you that no matter what you’re feeling—whether you’re happy, sad, tired, or missing me—you’ll always have something from me to hold onto.
+                    <br><br>
+                    This is my way of reaching out to you whenever you need me the most. Each page is a reminder that you are deeply loved, cared for, and never alone—even during the toughest days. I want you to have something to open whenever you need encouragement, or comfort.
+                    <br><br>
+                    More than anything, I hope this reminds you that I will always choose you, stand by you, and love you in every version of tomorrow. This is my heart in words, saved here for you, because you mean everything to me and I love you.
+                </p>
             </div>
         </div>
 
         <div id="chapters-view" class="view-section">
-            <div class="gallery-container" id="gallery-container">
-                <div class="carousel" id="carousel">
+            <div id="gallery-container" class="gallery-container">
+                <div id="carousel" class="carousel">
                     </div>
             </div>
+        </div>
 
-            <div class="bottom-label" id="chapter-controls">
-                For You, Always.
+        <div id="us-view" class="view-section">
+            <div class="home-card">
+                <h1 class="main-title" style="font-size: 2.5rem; color: #8a072c;">Our Time Together</h1>
+                <p class="quote" style="border: none; font-size: 1.2rem;">"Every second with you is a gift."</p>
+                
+                <div id="timer" style="display: flex; justify-content: center; gap: 10px; margin-top: 20px; flex-wrap: wrap;">
+                    <div class="time-box" style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: 15px; padding: 15px; min-width: 70px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); backdrop-filter: blur(5px);">
+                        <span id="days" style="font-family: 'Parisienne', cursive; font-size: 2rem; color: #8a072c; font-weight: bold; line-height: 1;">0</span>
+                        <span class="label" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; opacity: 0.8;">Days</span>
+                    </div>
+                    <div class="time-box" style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: 15px; padding: 15px; min-width: 70px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); backdrop-filter: blur(5px);">
+                        <span id="hours" style="font-family: 'Parisienne', cursive; font-size: 2rem; color: #8a072c; font-weight: bold; line-height: 1;">0</span>
+                        <span class="label" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; opacity: 0.8;">Hours</span>
+                    </div>
+                    <div class="time-box" style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: 15px; padding: 15px; min-width: 70px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); backdrop-filter: blur(5px);">
+                        <span id="minutes" style="font-family: 'Parisienne', cursive; font-size: 2rem; color: #8a072c; font-weight: bold; line-height: 1;">0</span>
+                        <span class="label" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; opacity: 0.8;">Mins</span>
+                    </div>
+                    <div class="time-box" style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: 15px; padding: 15px; min-width: 70px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); backdrop-filter: blur(5px);">
+                        <span id="seconds" style="font-family: 'Parisienne', cursive; font-size: 2rem; color: #8a072c; font-weight: bold; line-height: 1;">0</span>
+                        <span class="label" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; opacity: 0.8;">Secs</span>
+                    </div>
+                </div>
+                
+                <p class="home-message" style="margin-top: 30px; font-size: 1rem; text-align: center;">
+                    Since <span id="start-date-display" style="font-weight: bold; color: #8a072c;">Febuary 13, 2025</span> ❤️
+                </p>
             </div>
         </div>
 
     </div>
 
-    <div class="letter-overlay" id="letter-overlay">
+    <div id="chapter-controls" class="bottom-label hidden">
+        Swipe to Explore
+    </div>
+
+    <div id="letter-overlay" class="letter-overlay">
         <div class="parchment-card-container">
-            <div class="ribbon"></div>
             <div class="parchment-card">
                 <div class="card-border-deco"></div>
-                <div class="close-letter" onclick="closeLetter()">×</div>
+                <div class="close-letter" onclick="closeLetter()">✖</div>
                 
                 <div class="letter-content-scroll">
-                    <div class="card-monogram">My Dearest</div>
-                    <div class="letter-title-cursive" id="letter-title">Topic Title</div>
-                    <div class="letter-body-cursive" id="letter-body"></div>
-                     <br><br>
-                     <div style="font-family: 'Parisienne', cursive; font-size: 1.5rem;">Love, Your Keya</div>
-                     
-                     <div class="wax-seal">K.M</div>
+                    <div class="card-monogram">My Love</div>
+                    <div id="letter-title" class="letter-title-cursive">Topic Title</div>
+                    <div id="letter-body" class="letter-body-cursive">
+                        </div>
+                    
+                    <div class="wax-seal">
+                        <span>Love</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="music-fab" onclick="toggleMusicPlayer()">
+    <i class="fab fa-spotify"></i>
+    <span class="mobile-hidden">Our Playlist</span>
+</div>
+
+<div id="music-player-modal" class="music-player-modal">
+    <div class="music-card">
+        <div class="music-header">
+            <h3>Songs for You 🎵</h3>
+            <button onclick="toggleMusicPlayer()">✖</button>
+        </div>
+        
+        <iframe style="border-radius:12px" 
+            src="https://open.spotify.com/embed/playlist/2v9rD2i2p6h00y3g5?utm_source=generator&theme=0" 
+            width="100%" 
+            height="352" 
+            frameBorder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+        </iframe>
+        
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
