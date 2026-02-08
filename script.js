@@ -463,9 +463,3 @@ window.addEventListener('resize', () => updateCarousel(0, true));
 
 initCarousel();
 switchView('home');
-
-/* --- SPOTIFY PLAYER LOGIC --- */
-function toggleMusicPlayer() {
-    const player = document.getElementById('music-player-modal');
-    player.classList.toggle('active');
-}
