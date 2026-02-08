@@ -317,7 +317,6 @@ body {
     scrollbar-color: #a67c52 transparent;
     scroll-behavior: smooth;
     
-    /* FIX: Prevents text from overflowing */
     overflow-wrap: break-word; 
     word-wrap: break-word;
 }
@@ -448,12 +447,10 @@ body {
 
     .parchment-card-container { width: 90%; max-height: 75vh; }
     
-    /* FIX: Increased Padding to 30px left/right to move text away from the edge/border */
     .parchment-card { padding: 30px 30px; } 
 
     .letter-content-scroll { max-height: 55vh; }
     
-    /* FIX: Slightly smaller font to prevent overflow */
     .letter-body-cursive {
         font-size: 1.15rem; 
         line-height: 1.4;
@@ -462,13 +459,12 @@ body {
     .wax-seal { width: 50px; height: 50px; font-size: 1.2rem; }
 }
 
-/* --- TIMER STYLES --- */
 #timer {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
-    flex-wrap: wrap; /* Makes it mobile friendly */
+    flex-wrap: wrap; 
 }
 
 .time-box {
@@ -500,7 +496,6 @@ body {
     opacity: 0.8;
 }
 
-/* Specific Mobile Adjustment for Timer */
 @media (max-width: 768px) {
     .time-box {
         min-width: 65px;
@@ -510,3 +505,4 @@ body {
         font-size: 1.5rem;
     }
 }
+
