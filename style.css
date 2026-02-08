@@ -345,7 +345,6 @@ body {
     font-size: 1.4rem;
     line-height: 1.6;
     white-space: pre-wrap;
-    /* FIX: Ensures words break on small screens */
     overflow-wrap: break-word;
     word-wrap: break-word;
     max-width: 100%;
@@ -449,16 +448,65 @@ body {
 
     .parchment-card-container { width: 90%; max-height: 75vh; }
     
-    /* FIX: Tighten padding on mobile so text has room */
-    .parchment-card { padding: 25px 15px; } 
+    /* FIX: Increased Padding to 30px left/right to move text away from the edge/border */
+    .parchment-card { padding: 30px 30px; } 
 
     .letter-content-scroll { max-height: 55vh; }
     
-    /* FIX: Make font smaller on mobile so it doesn't overflow */
+    /* FIX: Slightly smaller font to prevent overflow */
     .letter-body-cursive {
-        font-size: 1.1rem; /* Smaller than desktop 1.4rem */
+        font-size: 1.15rem; 
         line-height: 1.4;
     }
     
     .wax-seal { width: 50px; height: 50px; font-size: 1.2rem; }
+}
+
+/* --- TIMER STYLES --- */
+#timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Makes it mobile friendly */
+}
+
+.time-box {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 15px;
+    min-width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+}
+
+.time-box span:first-child {
+    font-family: 'Parisienne', cursive;
+    font-size: 2rem;
+    color: var(--accent-color);
+    font-weight: bold;
+    line-height: 1;
+}
+
+.time-box .label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+/* Specific Mobile Adjustment for Timer */
+@media (max-width: 768px) {
+    .time-box {
+        min-width: 65px;
+        padding: 10px;
+    }
+    .time-box span:first-child {
+        font-size: 1.5rem;
+    }
 }
