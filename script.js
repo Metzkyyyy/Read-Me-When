@@ -65,25 +65,29 @@ const carousel = document.getElementById('carousel');
 const galleryContainer = document.getElementById('gallery-container');
 
 function switchView(viewName) {
-    // Get all view elements
+    // Get all the view sections
     const homeView = document.getElementById('home-view');
     const chaptersView = document.getElementById('chapters-view');
     const usView = document.getElementById('us-view');
     const missYouView = document.getElementById('miss-you-view');
     const safeSpaceView = document.getElementById('safe-space-view');
     
+    // Get other elements to control
     const btns = document.querySelectorAll('.nav-btn');
     const bottomLabel = document.getElementById('chapter-controls');
 
-    // 1. Reset everything (Hide all views, remove active class from buttons)
+    // 1. Reset: Remove 'active' class from ALL buttons
+    btns.forEach(btn => btn.classList.remove('active'));
+
+    // 2. Reset: Hide ALL views
     [homeView, chaptersView, usView, missYouView, safeSpaceView].forEach(view => {
         if(view) view.classList.remove('active-view');
     });
-    
-    btns.forEach(btn => btn.classList.remove('active'));
+
+    // 3. Reset: Hide the bottom label (for chapters)
     if(bottomLabel) bottomLabel.classList.add('hidden');
 
-    // 2. Show the selected view
+    // 4. Activate the specific view clicked
     if(viewName === 'home') {
         homeView.classList.add('active-view');
         btns[0].classList.add('active');
@@ -92,7 +96,7 @@ function switchView(viewName) {
         chaptersView.classList.add('active-view');
         btns[1].classList.add('active');
         if(bottomLabel) bottomLabel.classList.remove('hidden');
-        updateCarousel(); 
+        if(typeof updateCarousel === 'function') updateCarousel(); 
     }
     else if (viewName === 'us') {
         usView.classList.add('active-view');
@@ -544,3 +548,4 @@ function breathCycle() {
         }, 800); 
     }, 3200); 
 }
+
