@@ -19,6 +19,7 @@
     <div class="nav-container">
         <button class="nav-btn active" onclick="switchView('home')">Home</button>
         <button class="nav-btn" onclick="switchView('chapters')">Chapters</button>
+        <button class="nav-btn" onclick="switchView('poems')">Poems</button>
         <button class="nav-btn" onclick="switchView('us')">Us</button>
         <button class="nav-btn" onclick="switchView('miss-you')">Miss You</button>
         <button class="nav-btn" onclick="switchView('safe-space')">Safe Space</button>
@@ -46,6 +47,20 @@
                 <div id="carousel" class="carousel"></div>
             </div>
         </div>
+
+        <div id="poems-view" class="view-section">
+    <div class="home-card">
+        <h1 class="main-title" style="color: #8a072c;">My Poetry</h1>
+        <p class="home-message">Here are 90 pieces of my heart (with some you've already read).</p>
+
+        <button class="nav-btn" style="width:100%; margin-bottom: 15px; background: rgba(138, 7, 44, 0.1); color: #8a072c; border: 1px solid #8a072c;" onclick="openRandomPoem()">
+            <i class="fas fa-random"></i> Read Random Poem
+        </button>
+
+        <div id="poems-list" class="poems-scroll-box">
+            </div>
+    </div>
+</div>
 
         <div id="us-view" class="view-section">
             <div class="home-card">
@@ -147,3 +162,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
