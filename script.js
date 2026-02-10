@@ -464,79 +464,72 @@ window.addEventListener('resize', () => updateCarousel(0, true));
 initCarousel();
 switchView('home');
 
-/* --- MISS YOU STYLES --- */
-#miss-btn {
-    background: #8a072c;
-    color: white;
-    border: none;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    font-size: 2.5rem;
-    cursor: pointer;
-    box-shadow: 0 0 20px rgba(138, 7, 44, 0.4);
-    transition: all 0.2s ease;
-    animation: heartbeat 1.5s infinite;
+/* --- MISS YOU LOGIC --- */
+// Check if we are on the Miss You page
+if(document.getElementById('miss-count')) {
+    let missCount = localStorage.getItem('missCount') || 0;
+    document.getElementById('miss-count').innerText = missCount;
 }
 
-#miss-btn:active { transform: scale(0.9); background: #6d0522; }
+function addMissCount() {
+    let missCount = localStorage.getItem('missCount') || 0;
+    missCount++;
+    localStorage.setItem('missCount', missCount);
+    
+    document.getElementById('miss-count').innerText = missCount;
 
-@keyframes heartbeat {
-    0% { transform: scale(1); }
-    15% { transform: scale(1.1); }
-    30% { transform: scale(1); }
-    45% { transform: scale(1.1); }
-    60% { transform: scale(1); }
-    100% { transform: scale(1); }
+    const response = document.getElementById('miss-response');
+    response.style.opacity = '1';
+    
+    setTimeout(() => {
+        response.style.opacity = '0';
+    }, 2000);
 }
 
-/* --- BREATHING STYLES --- */
-.breathing-container {
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 20px;
+/* --- BREATHING LOGIC --- */
+let isBreathing = false;
+let breathTimer;
+
+function toggleBreathing() {
+    const circle = document.querySelector('.breathing-circle');
+    const text = document.getElementById('breath-text');
+    
+    if (!circle) return; // Safety check
+
+    if (!isBreathing) {
+        isBreathing = true;
+        circle.classList.add('breathing-active');
+        text.innerText = "Inhale...";
+        breathCycle(); 
+    } else {
+        isBreathing = false;
+        circle.classList.remove('breathing-active');
+        text.innerText = "Inhale";
+        clearTimeout(breathTimer);
+    }
 }
 
-.circle-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+function breathCycle() {
+    if (!isBreathing) return;
+    const text = document.getElementById('breath-text');
+    
+    // 4s Inhale
+    text.innerText = "Inhale...";
+    
+    breathTimer = setTimeout(() => {
+        if (!isBreathing) return;
+        text.innerText = "Hold..."; // 1s Hold
+        
+        breathTimer = setTimeout(() => {
+            if (!isBreathing) return;
+            text.innerText = "Exhale..."; // 4s Exhale
+            
+            breathTimer = setTimeout(() => {
+                if (!isBreathing) return;
+                breathCycle(); // Loop
+            }, 3200); 
+        }, 800); 
+    }, 3200); 
 }
 
-.breathing-circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #a3c4f3; /* Calming Blue */
-    opacity: 0.6;
-    transform: scale(1);
-    box-shadow: 0 0 30px rgba(163, 196, 243, 0.5);
-    transition: transform 4s ease-in-out; /* Smooth transition */
-}
-
-/* The Animation Class */
-.breathing-active {
-    animation: breatheAnim 8s infinite ease-in-out;
-}
-
-#breath-text {
-    position: absolute;
-    font-family: 'Montserrat', sans-serif;
-    color: #4a6fa5;
-    font-weight: 600;
-    font-size: 1.2rem;
-    pointer-events: none;
-}
-
-@keyframes breatheAnim {
-    0% { transform: scale(1); }      /* Start small */
-    40% { transform: scale(2.2); }   /* Inhale (Big) */
-    50% { transform: scale(2.2); }   /* Hold */
-    90% { transform: scale(1); }     /* Exhale (Small) */
-    100% { transform: scale(1); }    /* Hold */
-}
 
