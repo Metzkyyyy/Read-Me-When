@@ -624,6 +624,98 @@ body {
     100% { transform: scale(1); }    /* Hold */
 }
 
+/* --- POEMS LIST STYLES --- */
+.poems-container {
+    width: 100%;
+    max-height: 40vh; /* Keeps it inside the card */
+    overflow-y: auto; /* Allows scrolling inside the list */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid rgba(138, 7, 44, 0.2);
+    border-bottom: 1px solid rgba(138, 7, 44, 0.2);
+}
 
+/* Custom Scrollbar for the list */
+.poems-container::-webkit-scrollbar {
+    width: 5px;
+}
+.poems-container::-webkit-scrollbar-thumb {
+    background: #8a072c;
+    border-radius: 10px;
+}
 
+.poem-btn {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(138, 7, 44, 0.2);
+    padding: 12px;
+    border-radius: 15px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: #8a072c;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poem-btn:hover {
+    background: rgba(138, 7, 44, 0.1);
+    transform: translateX(5px);
+    padding-left: 15px;
+}
+
+.poem-btn i {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* --- POEMS SCROLL FIX --- */
+.poems-scroll-box {
+    width: 100%;
+    /* calculates height so it fits perfectly on mobile without hiding the bottom */
+    height: 50vh; 
+    overflow-y: auto; /* Allows up/down scrolling */
+    
+    /* Smooth scrolling for iPhone/Android */
+    -webkit-overflow-scrolling: touch; 
+    
+    /* visual styling */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Custom Scrollbar (Optional - makes it look cleaner) */
+.poems-scroll-box::-webkit-scrollbar {
+    width: 5px;
+}
+.poems-scroll-box::-webkit-scrollbar-thumb {
+    background: #8a072c;
+    border-radius: 10px;
+}
+
+/* Style for the individual Poem Buttons */
+.poem-btn {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(138, 7, 44, 0.15);
+    padding: 12px;
+    border-radius: 12px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: #8a072c;
+    font-size: 0.9rem;
+    cursor: pointer;
+    flex-shrink: 0; /* Prevents buttons from squishing */
+}
+
+.poem-btn:active {
+    background: #fce4ec;
+    transform: scale(0.98);
+}
 
