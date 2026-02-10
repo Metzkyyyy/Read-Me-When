@@ -20,8 +20,8 @@
         <button class="nav-btn active" onclick="switchView('home')">Home</button>
         <button class="nav-btn" onclick="switchView('chapters')">Chapters</button>
         <button class="nav-btn" onclick="switchView('us')">Us</button>
-        <a href="missyou.html" class="nav-btn" style="text-decoration:none;">Miss You</a>
-        <a href="breathe.html" class="nav-btn" style="text-decoration:none;">Safe Space</a>
+        <button class="nav-btn" onclick="switchView('miss-you')">Miss You</button>
+        <button class="nav-btn" onclick="switchView('safe-space')">Safe Space</button>
     </div>
 
     <div class="content-wrapper">
@@ -77,6 +77,46 @@
             </div>
         </div>
 
+        <div id="miss-you-view" class="view-section">
+            <div class="home-card">
+                <h1 class="main-title" style="color: #8a072c;">Miss Me?</h1>
+                <p class="home-message">
+                    Whenever you miss me and I'm not there, press this button.
+                    <br>It sends a signal to the universe (and my heart) that you're thinking of me.
+                </p>
+                <div class="heart-container" style="display: flex; justify-content: center; margin: 30px 0;">
+                    <button id="miss-btn" onclick="addMissCount()">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <p class="counter-text" style="font-family: 'Montserrat', sans-serif; font-size: 1.1rem; margin-top: 10px; color: #555;">
+                    You've missed me <span id="miss-count" style="font-weight: bold; color: #8a072c; font-size: 1.4rem;">0</span> times.
+                </p>
+                <p id="miss-response" style="opacity: 0; transition: 0.5s; color: #8a072c; font-family: 'Dancing Script', cursive; font-size: 1.5rem; margin-top: 15px;">
+                    I miss you more, my big baby! ❤️
+                </p>
+            </div>
+        </div>
+
+        <div id="safe-space-view" class="view-section">
+            <div class="home-card">
+                <h1 class="main-title" style="color: #4a6fa5;">Breathe with Me</h1>
+                <p class="home-message">
+                    If things feel heavy, stay here for a moment.
+                    <br>Follow the circle. Just breathe. You are safe.
+                </p>
+                <div class="breathing-container">
+                    <div class="circle-container">
+                        <div class="breathing-circle"></div>
+                        <p id="breath-text">Inhale</p>
+                    </div>
+                </div>
+                <button class="nav-btn" style="margin-top: 20px; background: rgba(74, 111, 165, 0.2); border: 1px solid #4a6fa5; color: #4a6fa5;" onclick="toggleBreathing()">
+                    Start / Stop
+                </button>
+            </div>
+        </div>
+
     </div>
 
     <div id="chapter-controls" class="bottom-label hidden">
@@ -93,7 +133,7 @@
                     <div class="card-monogram">My Darling</div>
                     <div id="letter-title" class="letter-title-cursive">Topic Title</div>
                     <div id="letter-body" class="letter-body-cursive"></div>
-                    
+
                     <div class="letter-signature">Love, Your Keya</div>
                     
                     <div class="wax-seal">
@@ -107,5 +147,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
